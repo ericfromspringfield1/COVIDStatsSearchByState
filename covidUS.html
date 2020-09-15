@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>COVID-19 Daily USA Stats</title>
+  <container class=linksContainer>
+  <link rel="stylesheet" href="covidUS.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+Paaji+2&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap" rel="stylesheet">
+  </container>
+</head>
+<body>
+    <div id="searchContainer">
+        <input
+        class="searchControl"
+        type="text"
+        placeholder="2-Letter State Abbreviation"
+        id="searchInput"
+        autofocus
+        >
+        <button class="searchControl" id="searchBtn" onclick="showElements()">Search</button>
+        <button class="searchControl" id="refreshBtn" onClick="window.location.reload();">Clear Data</button>
+    </div> 
+<container id="written">
+
+<div><h1 id="CovidHeadline">&#67; &#79; &#86; &#73; &#68; &#772;&#49;&#57; &#83;&#84;&#65;&#84;&#69; &#83;&#84;&#65;&#84;&#83;</h1></div>
+<div><h3 id="greenDecrease">Enter 2-letter state abbreviation above - 4th Section will be green when 7-day positive rate decreases four consecutive weeks</h1></div>
+<div><h3 id="stateAfterSearch"></h3></div>
+
+<container id="sectionContainer" style="display: none;">
+    <container id="section1">
+        <div><p id="maxDailyDeath"></p></div>
+        <div><p id="maxDailyPositiveIncrease"></p></div>
+        <div><p id="averageDailyPositiveIncrease"></p></div>
+        <div><p id="currentlyHospitalized"></p></div>
+    </container>
+    <container id="section2">
+        <div><p id="maxDailyPercentPositive"></p></div>
+        <div><p id="maxNewTests"></p></div>
+        <div><p id="averageNewTests"></p></div>
+    </container>
+    <container id="section3">
+        <div><p id="dailyPercentPositiveDifferenceElement"></p></div>
+        <div><p id="percentPositiveOver15Days"></p></div>
+        <div><p id="compareTodayTo15DayAverageElement"></p></div>
+    </container>
+    <container id="section4">
+        <div><p id="percentPositiveOver7Days"></p></div>
+  <div><p id="percentPositiveOverPrevious7Days"></p></div>
+  <div><p id="percentPositiveOverPrevious7Days2Weeks"></p></div>
+  <div><p id="percentPositiveOverPrevious7Days3Weeks"></p></div>
+  <div><p id="percentPositiveOverPrevious7Days4Weeks"></p></div>
+  </container>
+  </container>
+</container>
+
+<div>
+  <table id="table">
+  <tr>
+    <th id="date">Date</th>
+    <th id="state">State</th>
+    <th id="positive">Positive Results</th>
+    <th id="negative">Negative Results</th>
+    <th id="totalTestResults">Total Test Results</th>
+    <th id="death">Deaths</th>
+    <th id="percentPositive">Percent Positive</th>
+    <th id="percentDeathOfPositive">Percent Death Of Postive</th>
+    <th id="newTests">New Tests</th>
+    <th id="newCases">New Cases</th>
+    <th id="dailyPercentPositive">Daily Percent Positive</th>
+    <th id="newDeaths">New Deaths</th>
+    </tr>
+</table>
+  
+<footer  id="footer"><p>Data is derived from, in my opinion, the most comprehensive COVID-19 tracking website, <a href="https://covidtracking.com/">covidtracking.com</a></p></div>
+</footer>
+
+<script src="covidUS.js"></script>
+<script src="statsUs.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</body>
+
+</html>

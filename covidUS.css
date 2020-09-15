@@ -1,0 +1,535 @@
+/*Responsive Styling for Mobile Devices*/
+@media all  and (max-width: 600px) {
+    #CovidHeadline {  
+      width: 225%;
+      background-color:  black;
+      color:  white;
+        
+    }
+    #statement {
+      width: 225%;
+      color: black;
+      font-size: 1.2em;
+      }
+  
+      #writtenP1 {
+      width: 225%;
+      color: black;
+      font-size: 1.2em;
+      }
+
+      #sectionContainer {
+        display: inline-flex;
+        padding: 10px;
+        font-size: 0.9em;
+        
+        
+    }
+  
+  }  
+  
+  /***************************************/
+  
+  /* POPUP/ALERT STYLING */
+  .swal-modal {
+      background-color: rgba(24, 23, 23, 0.89);
+      font-family: 'Inconsolata', monospace;
+      color: white;
+      border: 3px double white;
+    }
+  
+  
+  .swal-title {
+      color: white;
+  }
+  
+  .swal-text {
+      padding: 10px;
+      text-align: center;
+      margin: 22px;
+      color: white;
+      font-size: 21px;
+  
+  }
+  
+  .swal-button--mask {
+      background-color: rgb(45, 45, 104);
+      color: white;
+      border: 1px solid white;
+  }
+  
+  .swal-button--noMask {
+      background-color: rgb(45, 45, 104);
+      color: white;
+  }
+  
+  .swal-icon--warning {
+      background-color: red;
+      border: none;
+      
+  
+  }
+  
+  /*************************************/
+
+  #searchContainer {
+    padding: 15px;
+    top: 0;
+    background-color: rgba(4, 28, 59, 0.678);
+    display: block;
+}
+
+#searchContainer input {
+    width: 200px;
+}
+
+
+#searchContainer button {
+    background-color: rgba(4, 28, 59, 0.678);
+    width: 75px;
+    color: whitesmoke;
+    margin-left: 5px;
+}
+
+#searchContainer #refreshBtn {
+    background-color: rgba(4, 28, 59, 0.678);
+    width: 75px;
+    color: whitesmoke;
+    margin-left: 5px;
+
+    
+}
+
+.searchControl {
+    box-shadow: 1px 1px 2px black;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+  #written { 
+    font-family: 'Inconsolata', monospace;
+    display: block;
+    background-color: black;
+  }
+
+  .linksContainer {
+        display: flex;
+        padding: 10px;
+          
+  }  
+
+
+  .statesLink {
+    background-color: white;
+    display: inline-flex;
+    width: fit-content;
+    color: black;
+    padding: 5px;
+    text-decoration: none;
+    box-shadow: 1px 1px 5px #031938;
+    font-family: 'Inconsolata', monospace;
+    margin-left: 10px;
+  }
+
+  #greenDecrease {
+      background-color: seagreen;
+      color: whitesmoke;
+      padding: 5px;
+      width: fit-content;
+      box-shadow: 1px 1px 5px #048f39;
+      font-family: 'Inconsolata', monospace;
+      font-size: 1em; 
+      margin-left: 15%;
+      margin-top: 5px;
+      display: inline-block;
+  }
+  
+  
+  
+  #CovidHeadline {
+      margin-left: 35%;
+      margin-top: 15px;
+      padding: 10px;
+      background-color:  black;
+      color:  white;
+      display: inline-block;
+
+  }
+
+  #stateAfterSearch {
+    display: block;
+    margin-top: 15px;
+    padding: 10px;
+    color:  white;
+    
+
+
+}
+
+  
+  
+  #footer {
+      color: whitesmoke;
+      font-size: 1.0em;
+      box-shadow: 1px 1px 5px #031938;
+      width: 99%;
+      background-color: rgba(0, 0, 0, 0.555);
+      padding: 5px;
+      margin-top: 5px;
+      font-family: 'Baloo Paaji 2', cursive;
+  
+  
+  }
+  
+  #writtenP1 {
+      color: black;
+      font-size: 1.2em;
+  }
+
+  #sectionContainer {
+    display: inline-flex;
+    padding: 10px;
+    font-size: 0.9em;
+  }
+  
+      
+  #section1 {
+      box-shadow: 1px 1px 5px #031938;
+      border-radius: 3%;
+      width: fit-content;
+      background-color: rgb(12, 66, 102);
+      margin-left: 20px;
+  }
+  
+  #maxDailyDeath {
+      background-color: rgba(8, 15, 48, 0.116);
+      box-shadow: 1px 1px 5px #031938;
+      color: rgb(245, 245, 245);
+      width: fit-content;
+      padding: 10px;
+      margin-left: 10px;
+      margin-right: 10px;
+      font-family: 'Inconsolata', monospace;
+  }
+  
+  #maxDailyPositiveIncrease {
+      background-color: rgba(8, 15, 48, 0.116);
+      box-shadow: 1px 1px 5px #031938;
+      color: rgb(245, 245, 245);
+      width: fit-content;
+      padding: 10px;
+      margin-left: 10px;
+      margin-right: 10px;
+      font-family: 'Inconsolata', monospace;
+  }
+  
+  #averageDailyPositiveIncrease {
+      background-color: rgba(8, 15, 48, 0.116);
+      box-shadow: 1px 1px 5px #031938;
+      color: rgb(245, 245, 245);
+      width: fit-content;
+      padding: 10px;
+      margin-left: 10px;
+      margin-right: 10px;
+      font-family: 'Inconsolata', monospace;
+  }
+
+  #currentlyHospitalized {
+    background-color: rgba(8, 15, 48, 0.116);
+    box-shadow: 1px 1px 5px #031938;
+    color: rgb(245, 245, 245);
+    width: fit-content;
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-family: 'Inconsolata', monospace;
+}
+  
+  #section2 {
+      box-shadow: 1px 1px 5px #031938;
+      border-radius: 3%;
+      width: fit-content;
+      background-color: rgb(12, 66, 102);
+      margin-left: 10px;
+      margin-right: 10px;
+      align-content: center;
+  }
+  
+  #maxDailyPercentPositive {
+      background-color: rgba(8, 15, 48, 0.116);
+      box-shadow: 1px 1px 5px #031938;
+      color: rgb(245, 245, 245);
+      width: fit-content;
+      padding: 10px;
+      margin-left: 10px;
+      margin-right: 10px;
+      font-family: 'Inconsolata', monospace;
+  }
+  
+  #maxNewTests {
+      background-color: rgba(8, 15, 48, 0.116);
+      box-shadow: 1px 1px 5px #031938;
+      color: rgb(245, 245, 245);
+      width: fit-content;
+      padding: 10px;
+      margin-left: 10px;
+      margin-right: 10px;
+      font-family: 'Inconsolata', monospace;
+  }
+  
+  #averageNewTests {
+      background-color: rgba(8, 15, 48, 0.116);
+      box-shadow: 1px 1px 5px #031938;
+      color: rgb(245, 245, 245);
+      width: fit-content;
+      padding: 10px;
+      margin-left: 10px;
+      margin-right: 10px;
+      font-family: 'Inconsolata', monospace;
+  }
+  
+  #section3 {
+      box-shadow: 1px 1px 5px #031938;
+      border-radius: 3%;
+      width: fit-content;
+      background-color: rgb(12, 66, 102);
+      margin-right: 10px; 
+      
+  }
+  
+  #dailyPercentPositiveDifferenceElement {
+      background-color: rgba(8, 15, 48, 0.116);
+      box-shadow: 1px 1px 5px #031938;
+      color: rgb(245, 245, 245);
+      width: fit-content;
+      padding: 10px;
+      margin-left: 10px;
+      margin-right: 10px;
+      font-family: 'Inconsolata', monospace;
+  }
+  
+  
+  #percentPositiveOver15Days {
+      background-color: rgba(8, 15, 48, 0.116);
+      box-shadow: 1px 1px 5px #031938;
+      color: rgb(245, 245, 245);
+      width: fit-content;
+      padding: 10px;
+      margin-left: 10px;
+      margin-right: 10px;
+      font-family: 'Inconsolata', monospace;
+  }
+  
+  #compareTodayTo15DayAverageElement {
+      background-color: rgba(8, 15, 48, 0.116);
+      box-shadow: 1px 1px 5px #031938;
+      color: rgb(245, 245, 245);
+      width: fit-content;
+      padding: 10px;
+      margin-left: 10px;
+      margin-right: 10px;
+      font-family: 'Inconsolata', monospace;
+  }
+
+  #section4 {
+    box-shadow: 1px 1px 5px #031938;
+    border-radius: 3%;
+    width: fit-content;
+    background-color: rgb(12, 66, 102);
+    margin-right: 10px; 
+    
+}
+
+#percentPositiveOver7Days {
+    background-color: rgba(8, 15, 48, 0.116);
+    box-shadow: 1px 1px 5px #031938;
+    color: rgb(245, 245, 245);
+    width: fit-content;
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-family: 'Inconsolata', monospace;
+}
+
+#percentPositiveOverPrevious7Days {
+    background-color: rgba(8, 15, 48, 0.116);
+    box-shadow: 1px 1px 5px #031938;
+    color: rgb(245, 245, 245);
+    width: fit-content;
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-family: 'Inconsolata', monospace;
+}
+
+#percentPositiveOverPrevious7Days2Weeks {
+    background-color: rgba(8, 15, 48, 0.116);
+    box-shadow: 1px 1px 5px #031938;
+    color: rgb(245, 245, 245);
+    width: fit-content;
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-family: 'Inconsolata', monospace;
+}
+
+#percentPositiveOverPrevious7Days3Weeks {
+    background-color: rgba(8, 15, 48, 0.116);
+    box-shadow: 1px 1px 5px #031938;
+    color: rgb(245, 245, 245);
+    width: fit-content;
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-family: 'Inconsolata', monospace;
+}
+
+#percentPositiveOverPrevious7Days4Weeks {
+    background-color: rgba(8, 15, 48, 0.116);
+    box-shadow: 1px 1px 5px #031938;
+    color: rgb(245, 245, 245);
+    width: fit-content;
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-family: 'Inconsolata', monospace;
+}
+  
+  
+  .table {
+      width: 100%;
+      border: 1px solid black;
+      border-collapse: collapse;
+      border-spacing: 5px;
+  }
+  
+  th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+      padding: 15px;
+      text-align: center;
+      font-family: 'Inconsolata', monospace;
+    }
+  
+  #date {
+      background-color: rgb(36, 55, 160);
+      color: white;
+   }
+  
+  #state {
+     background-color: cadetblue;
+     color: white;
+  }
+  
+  #positive {
+      background-color: crimson;
+      color: white;
+  }
+  
+  #negative {
+      background-color: slategray;
+      color: white;
+  }
+  
+  #totalTestResults {
+      background-color: rebeccapurple;
+      color: white;
+  }
+  
+  #death {
+      background-color: black;
+      color: white;
+  }
+  
+  #percentPositive {
+      background-color: coral;
+      color: white;
+  }
+  
+  #percentDeathOfPositive {
+      background-color: green;
+      color: white;
+  }
+  
+  #newCases {
+      background-color: rgb(217, 255, 0);
+      color: black;
+  }
+  
+  #newTests {
+      background-color: rgb(217, 255, 0);
+      color: black;
+  }
+  
+  #dailyPercentPositive {
+      background-color: rgb(217, 255, 0);
+      color: black;
+  }
+  
+  #newDeaths {
+      background-color: rgb(83, 82, 82);
+      color: white;
+  }
+  
+  #dateData {
+      background-color: rgb(36, 55, 160);
+      color: white;
+  }
+  
+  #stateData {
+      background-color: cadetblue;
+      color: white; 
+  }
+  
+  #positiveData {
+      background-color: crimson;
+      color: white;
+  }
+  
+  #negativeData {
+      background-color: slategray;
+      color: white;
+  }
+  
+  #totalTestResultsData {
+      background-color: rebeccapurple;
+      color: white;
+  }
+  
+  #deathData {
+      background-color: black;
+      color: white;
+  }
+  
+  #percentPositiveRow {
+      background-color: coral;
+      color: white;
+  }
+  
+  #percentDeathOfPositiveData {
+      background-color: green;
+      color: white;
+  }
+  
+  #newCasesData {
+      background-color: rgb(217, 255, 0);
+      color: black;
+  }
+  
+  #newTestsData {
+      background-color: rgb(217, 255, 0);
+      color: black;
+  }
+  
+  #dailyPercentPositiveData {
+      background-color: rgb(217, 255, 0);
+      color: black;
+  }
+  
+  #newDeathsData {
+      background-color: rgb(83, 82, 82);
+      color: white;
+  }
+  
+  
