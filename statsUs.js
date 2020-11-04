@@ -127,6 +127,7 @@ function validateSearchState(searchTerm) {
     })
     .then((result) => {
         init(result);
+        console.log(result)
     });
 }
 
@@ -135,7 +136,7 @@ function init(data) {
   const renderToDom = (resultsString) => {
     stateWrapper.innerHTML += resultsString;
     console.log(stateWrapper);
-    console.log(data)
+    
   };
 
   if (data[0].state) {
