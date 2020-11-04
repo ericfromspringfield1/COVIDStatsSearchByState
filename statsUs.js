@@ -135,18 +135,9 @@ function init(data) {
   const renderToDom = (resultsString) => {
     stateWrapper.innerHTML += resultsString;
     console.log(stateWrapper);
-    
+
   };
 
-  $(document).ready(function() {
-    $("form").submit(function(e) {
-        e.preventDefault();
-        $('#content').html(`COMPILING ${searchTerm} Stats`).load('/ajax_html_echo/', function(response, status, xhr) {
-            //This is the callback. You can check for error here.
-            //For example if (status == 'error') alertTheMedia();
-        });
-    });
-});
 
   if (data[0].state) {
     data[0].state;
