@@ -53,7 +53,7 @@ const states = [
   WY: "Wyoming",
 },
 ]
-console.log(states);
+//console.log(states);
 
 let stateList = []
 const statesAbbrevs = states.map((state) => {
@@ -127,7 +127,6 @@ function validateSearchState(searchTerm) {
     })
     .then((result) => {
         init(result);
-        console.log(result)
     });
 }
 
@@ -138,6 +137,16 @@ function init(data) {
     console.log(stateWrapper);
     
   };
+
+  $(document).ready(function() {
+    $("form").submit(function(e) {
+        e.preventDefault();
+        $('#content').html(`COMPILING ${searchTerm} Stats`).load('/ajax_html_echo/', function(response, status, xhr) {
+            //This is the callback. You can check for error here.
+            //For example if (status == 'error') alertTheMedia();
+        });
+    });
+});
 
   if (data[0].state) {
     data[0].state;

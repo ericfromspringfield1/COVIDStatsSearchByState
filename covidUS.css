@@ -29,6 +29,8 @@
   }  
   
   /***************************************/
+
+  #loading { display:none; }
   
   /* POPUP/ALERT STYLING */
   .swal-modal {
