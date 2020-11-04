@@ -55,11 +55,52 @@ const states = [
 ]
 console.log(states);
 
+let stateList = []
+const statesAbbrevs = states.map((state) => {
+  let ak = state.AK
+  let az = state.AZ
+  let al = state.AL 
+  let ar = state.AR
+  let ca = state.CA
+  let co = state.CO
+  let ct = state.CT
+  let dc = state.DC
+  let de = state.DE
+  let fl = state.FL
+  let ga = state.GA
+  let hi = state.HI
+  let ks = state.KS
+  let ky = state.KY
+  let ia = state.IA
+  let la = state.LA
+  let id = state.ID
+  let il = state.IL
+  /*let ar = state.AR
+  let ar = state.AR
+  let ar = state.AR
+  let ar = state.AR
+  let ar = state.AR
+  let ar = state.AR
+  let ar = state.AR
+  let ar = state.AR
+  let ar = state.AR
+  let ar = state.AR
+  let ar = state.AR
+  let ar = state.AR
+  let ar = state.AR
+  let ar = state.AR
+  let ar = state.AR
+*/
+
+  stateList.push(ak, al, az, ar, ca, co, ct, de, dc, fl, ga, hi, id, il, ia, ks, ky, la)
+  console.log(stateList)
+})
+
 function validateSearchState(searchTerm) {
     for (i = 0; i < states.length; i++) {
-    
+  
         
-        if (searchTerm.length > 2 || searchTerm.length < 2 || !searchTerm)  {
+        if (searchTerm.length > 2 || searchTerm.length < 2)  {
             //Validate The User Input (must be 2 letters only and the appropriate two letters -- cannot be blank -- or 
             //if searchTerm equals any of the above States object)
             swal(`Please enter a valid 2-letter state code.`, {
@@ -94,6 +135,7 @@ function init(data) {
   const renderToDom = (resultsString) => {
     stateWrapper.innerHTML += resultsString;
     console.log(stateWrapper);
+    console.log(data)
   };
 
   if (data[0].state) {
