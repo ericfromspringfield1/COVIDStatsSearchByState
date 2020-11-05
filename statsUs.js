@@ -134,7 +134,6 @@ function init(data) {
   const stateWrapper = document.querySelector("table");
   const renderToDom = (resultsString) => {
     stateWrapper.innerHTML += resultsString;
-    console.log(stateWrapper);
 
   };
 
