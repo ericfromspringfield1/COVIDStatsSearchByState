@@ -307,8 +307,17 @@ function init(data) {
     });
     console.log(maxDailyDeath);
 
+    const getMaxDeathDate = () => {
+      for (i = 0; i < arrayOfDeathIncrease.length; i++)
+
+        if (maxDailyDeath[i]) {
+      }
+      return data[0].lastUpdateEt[i]
+    }
+
+
     let maxDailyDeathElement = document.getElementById("maxDailyDeath");
-    maxDailyDeathElement.innerHTML = `Most DEATHS in 24-hour period (last 15 days) - ${maxDailyDeath}`;
+    maxDailyDeathElement.innerHTML = `Most DEATHS in 24-hour period (last 15 days) - ${maxDailyDeath} on ${getMaxDeathDate()}`;
 
     //****RETURN Highest Number of Daily Positive Results  Results Over 15 Days*******//
     let dailyPositiveIncreaseToday = data[0].positiveIncrease;
@@ -1062,7 +1071,7 @@ function init(data) {
       removeAllZero4Weeks(arrayOfPositiveIncreasePrevious7Days4Weeks, 0)
     );
 
-    //IF Positive Increase Percent decreases 5 Consecutive Weeks, Do Something Cool
+    // If Positive Increase Percent decreases 5 Consecutive Weeks, seagreen background
 
     if (
       percentPositiveOverPrevious7Days3Weeks <
@@ -1075,6 +1084,8 @@ function init(data) {
     ) {
       document.getElementById("section4").style.backgroundColor = "seagreen";
     }
+
+    // If Positive Increase Percent increases 5 Consecutive Weeks, red background //
 
       if (
         percentPositiveOverPrevious7Days3Weeks >
