@@ -308,16 +308,20 @@ function init(data) {
     console.log(maxDailyDeath);
 
     const getMaxDeathDate = () => {
-      for (i = 0; i < arrayOfDeathIncrease.length; i++)
-
-        if (maxDailyDeath[i]) {
+      for (i = 0; i < deathDateArray.length; i++) {
+        deathDateArray.indexOf(i)
+        
+        
       }
-      return data[0].lastUpdateEt[i]
-    }
+      if (i = arrayOfDeathIncrease.indexOf(maxDailyDeath)){
 
+      }
+       return data[i].lastUpdateEt
+    
+  }
 
-    let maxDailyDeathElement = document.getElementById("maxDailyDeath");
-    maxDailyDeathElement.innerHTML = `Most DEATHS in 24-hour period (last 15 days) - ${maxDailyDeath} on ${getMaxDeathDate()}`;
+  let maxDailyDeathElement = document.getElementById("maxDailyDeath");
+  maxDailyDeathElement.innerHTML = `Most DEATHS in 24-hour period (last 15 days) - ${maxDailyDeath} on ${getMaxDeathDate()}`;
 
     //****RETURN Highest Number of Daily Positive Results  Results Over 15 Days*******//
     let dailyPositiveIncreaseToday = data[0].positiveIncrease;
