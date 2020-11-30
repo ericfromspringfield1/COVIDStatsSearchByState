@@ -13,7 +13,6 @@
   </container>
 </head>
 <body>
-    <div id='content'></div>
     <div id="searchContainer">
         <input
         class="searchControl"
@@ -26,6 +25,7 @@
         <button class="searchControl" id="refreshBtn" onClick="window.location.reload();">Clear Data</button>
     </div> 
 <container id="written">
+
 <div><h1 id="CovidHeadline">&#67; &#79; &#86; &#73; &#68; &#772;&#49;&#57; &#83;&#84;&#65;&#84;&#69; &#83;&#84;&#65;&#84;&#83;</h1></div>
 <div><h3 id="greenDecrease">Enter 2-letter state abbreviation above - 4th Section will be green when 7-day positive rate decreases four consecutive weeks</h1></div>
 <div><h3 id="stateAfterSearch"></h3></div>
@@ -33,6 +33,7 @@
 <container id="sectionContainer" style="display: none;">
     <container id="section1">
         <div><p id="maxDailyDeath"></p></div>
+        <div><p id="totalDeaths15Days"></p></div>
         <div><p id="maxDailyPositiveIncrease"></p></div>
         <div><p id="averageDailyPositiveIncrease"></p></div>
         <div><p id="currentlyHospitalized"></p></div>
