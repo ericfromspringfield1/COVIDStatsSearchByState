@@ -29,7 +29,6 @@
   }  
   
   /***************************************/
-
   
   /* POPUP/ALERT STYLING */
   .swal-modal {
@@ -76,12 +75,13 @@
   #searchContainer {
     padding: 15px;
     top: 0;
-    background-color: rgba(4, 28, 59, 0.678);
+    background-color: rgba(4, 28, 59, 0.767);
     display: block;
 }
 
 #searchContainer input {
     width: 200px;
+    padding: 10px;
 }
 
 
@@ -93,7 +93,8 @@
 }
 
 #searchContainer #refreshBtn {
-    background-color: rgba(4, 28, 59, 0.678);
+    background-color: rgba(69, 116, 16, 0.678);
+    background-blend-mode: color-dodge;
     width: 75px;
     color: whitesmoke;
     margin-left: 5px;
@@ -215,6 +216,17 @@
   }
   
   #maxDailyPositiveIncrease {
+      background-color: rgba(8, 15, 48, 0.116);
+      box-shadow: 1px 1px 5px #031938;
+      color: rgb(245, 245, 245);
+      width: fit-content;
+      padding: 10px;
+      margin-left: 10px;
+      margin-right: 10px;
+      font-family: 'Inconsolata', monospace;
+  }
+
+  #totalDeaths15Days {
       background-color: rgba(8, 15, 48, 0.116);
       box-shadow: 1px 1px 5px #031938;
       color: rgb(245, 245, 245);
