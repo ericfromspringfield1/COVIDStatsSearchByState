@@ -302,14 +302,55 @@ function init(data) {
     console.log(deathIncreaseNumsToday);
     console.log(arrayOfDeathIncrease);
 
+    const getDate = () => {
+      let dateToday = data[0].lastUpdateEt;
+      let dateYesterday = data[1].lastUpdateEt;
+      let date2Days = data[2].lastUpdateEt;
+      let date3Days = data[3].lastUpdateEt;
+      let date4Days = data[4].lastUpdateEt;
+      let date5Days = data[5].lastUpdateEt;
+      let date6Days = data[6].lastUpdateEt;
+      let date7Days = data[7].lastUpdateEt;
+      let date8Days = data[8].lastUpdateEt;
+      let date9Days = data[9].lastUpdateEt;
+      let date10Days = data[10].lastUpdateEt;
+      let date11Days = data[11].lastUpdateEt;
+      let date12Days = data[12].lastUpdateEt;
+      let date13Days = data[13].lastUpdateEt;
+      let date14Days = data[14].lastUpdateEt;
+      let dateArray = [];
+  
+      dateArray.push(
+        dateToday,
+        dateYesterday,
+        date2Days,
+        date3Days,
+        date4Days,
+        date5Days,
+        date6Days,
+        date7Days,
+        date8Days,
+        date9Days,
+        date10Days,
+        date11Days,
+        date12Days,
+        date13Days,
+        date14Days
+      );
+      console.log(getDate(dateToday));
+      console.log(dateArray);
+      }
+      
+      
+
     const maxDailyDeath = arrayOfDeathIncrease.reduce(function (a, b) {
       return Math.max(a, b);
     });
     console.log(maxDailyDeath);
 
     const getMaxDeathDate = () => {
-      for (i = 0; i < deathDateArray.length; i++) {
-        deathDateArray.indexOf(i)
+      for (i = 0; i < deathDate.length; i++) {
+        dateArray.indexOf(i)
         
         
       }
@@ -389,6 +430,24 @@ function init(data) {
       return Math.max(a, b);
     });
     console.log(maxDailyPositiveIncrease);
+
+    const getMaxPositiveIncreaseDate = () => {
+      for (i = 0; i < arrayOfPositiveIncrease.length; i++) {
+        getDate().indexOf(i)
+      }
+      if (i = arrayOfPositiveIncrease.indexOf(maxDailyPositiveIncrease)){
+
+      }
+       return data[i].lastUpdateEt
+    
+  }
+
+  
+    let maxDailyPositiveIncreaseElement = document.getElementById(
+      "maxDailyPositiveIncrease"
+    );
+    maxDailyPositiveIncreaseElement.innerHTML = `Most POSITIVE CASES in 24-hour period (last 15 days) - ${maxDailyPositiveIncrease} on ${getMaxPositiveIncreaseDate()}.`;
+
 
     let maxDailyPositiveIncreaseElement = document.getElementById(
       "maxDailyPositiveIncrease"
