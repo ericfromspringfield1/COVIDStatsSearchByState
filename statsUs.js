@@ -449,10 +449,6 @@ function init(data) {
     maxDailyPositiveIncreaseElement.innerHTML = `Most POSITIVE CASES in 24-hour period (last 15 days) - ${maxDailyPositiveIncrease} on ${getMaxPositiveIncreaseDate()}.`;
 
 
-    maxDailyPositiveIncreaseElement = document.getElementById(
-      "maxDailyPositiveIncrease"
-    );
-    maxDailyPositiveIncreaseElement.innerHTML = `Most POSITIVE CASES in 24-hour period (last 15 days) - ${maxDailyPositiveIncrease}.`;
 
     /* RETURN TOTAL DAILY POSITIVE INCREASE OVER 15 DAYS */
     const totalDailyPositiveIncrease = arrayOfPositiveIncrease.reduce(function (
