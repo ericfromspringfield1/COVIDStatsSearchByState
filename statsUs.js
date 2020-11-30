@@ -443,13 +443,13 @@ function init(data) {
   }
 
   
-    let maxDailyPositiveIncreaseElement = document.getElementById(
+    maxDailyPositiveIncreaseElement = document.getElementById(
       "maxDailyPositiveIncrease"
     );
     maxDailyPositiveIncreaseElement.innerHTML = `Most POSITIVE CASES in 24-hour period (last 15 days) - ${maxDailyPositiveIncrease} on ${getMaxPositiveIncreaseDate()}.`;
 
 
-    let maxDailyPositiveIncreaseElement = document.getElementById(
+    maxDailyPositiveIncreaseElement = document.getElementById(
       "maxDailyPositiveIncrease"
     );
     maxDailyPositiveIncreaseElement.innerHTML = `Most POSITIVE CASES in 24-hour period (last 15 days) - ${maxDailyPositiveIncrease}.`;
