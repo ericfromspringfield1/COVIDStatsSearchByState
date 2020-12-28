@@ -339,7 +339,7 @@ if (data[0].state) {
   
 
   const totalDeaths15DaysElement = document.getElementById('totalDeaths15Days')
-  totalDeaths15DaysElement.innerHTML = `Total DEATHS Last 15 Days - ${totalDeaths15Days}`;
+  totalDeaths15DaysElement.innerHTML = `Total DEATHS Last 30 Days - ${totalDeaths15Days}`;
 
 
   const maxDailyDeath = arrayOfDeathIncrease.reduce(function (a, b) {
@@ -360,7 +360,7 @@ if (data[0].state) {
   }
 
   let maxDailyDeathElement = document.getElementById("maxDailyDeath");
-  maxDailyDeathElement.innerHTML = `Most DEATHS in 24-hour period (last 15 days) - ${maxDailyDeath} on ${getMaxDeathDate()}`;
+  maxDailyDeathElement.innerHTML = `Most DEATHS in 24-hour period (last 30 days) - ${maxDailyDeath} on ${getMaxDeathDate()}`;
 
   //****RETURN Highest Number of Daily Positive Results  Results Over 15 Days*******//
   let dailyPositiveIncreaseToday = data[0].positiveIncrease;
